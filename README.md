@@ -120,6 +120,12 @@ Here is a case where no grouping occurred. This is a set of ribonucleoproteins t
 
 ---
 
+## Watch the algorithm in action
+
+You can watch an example of the algorithm in action in [this video link](https://youtu.be/IAE59QrQYos). It is just over 2 minutes long. The data is from [this repository](https://github.com/pwilmart/MaxQuant_and_PAW/tree/master/PAW_results) and the `PAW_protein_grouper.log` file has all of the console output. The samples are from cultured mouse bone marrow cells.
+
+---
+
 ![slide 19](images/Slide19.png)
 
 An important point is that grouping can dramatically alter peptide information content. For our example of beta tubulin, the shared peptides are pretty useless if we want to know which specific beta tubulin proteins are present in our sample. But what if we only wanted to compare total beta tubulin family expression between samples? Then all of the peptides shared between beta tubulins, but not mapped to any other proteins, are now highly informative for spectral counting, SILAC, iTRAQ, or MRM quantification, and do not need to be excluded. “Shared” has context and depends on the question being asked.
